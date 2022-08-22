@@ -11,3 +11,6 @@ https://github.com/lvgalvao/Udacity-Data-Engineering-Projects/blob/main/Exercise
 *  Exercise 3b: [Creating Denormalized Tables using PostgreSQL and SQL;](
 https://github.com/lvgalvao/Udacity-Data-Engineering-Projects/blob/main/Exercises/Exercicio%2003b%20-%20Using%20pgAdmin4.ipynb)
 
+*  Exercise 4: [Creating Denormalized Tables using PostgreSQL and SQL;](
+https://github.com/lvgalvao/Udacity-Data-Engineering-Projects/blob/main/Exercises/Exercise%204%20Creating%20Fact%20and%20Dimension%20Tables%20with%20Star%20Schema.ipynb)
+
