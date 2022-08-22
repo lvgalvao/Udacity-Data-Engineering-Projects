@@ -4,3 +4,7 @@
 
 *  Exercise 2: [Creating Normalized Tables with PostgreSQL using Psycopg2;](
 https://github.com/lvgalvao/Udacity-Data-Engineering-Projects/blob/main/Exercises/Lesson%202%20Exercise%201%20Creating%20Normalized%20Tables.ipynb)
+
+*  Exercise 3: [Creating Denormalized Tables with PostgreSQL using Psycopg2;](
+https://github.com/lvgalvao/Udacity-Data-Engineering-Projects/blob/main/Exercises/Exercise%203%20Creating%20Denormalized%20Tables.ipynb)
+
