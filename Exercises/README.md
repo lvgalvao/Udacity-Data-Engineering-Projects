@@ -8,3 +8,6 @@ https://github.com/lvgalvao/Udacity-Data-Engineering-Projects/blob/main/Exercise
 *  Exercise 3: [Creating Denormalized Tables with PostgreSQL using Psycopg2;](
 https://github.com/lvgalvao/Udacity-Data-Engineering-Projects/blob/main/Exercises/Exercise%203%20Creating%20Denormalized%20Tables.ipynb)
 
+*  Exercise 3b: [Creating Denormalized Tables using PostgreSQL and SQL;](
+https://github.com/lvgalvao/Udacity-Data-Engineering-Projects/blob/main/Exercises/Exercicio%2003b%20-%20Using%20pgAdmin4.ipynb)
+
