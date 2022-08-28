@@ -14,3 +14,6 @@ https://github.com/lvgalvao/Udacity-Data-Engineering-Projects/blob/main/Exercise
 *  Exercise 4: [Creating Denormalized Tables using PostgreSQL and SQL;](
 https://github.com/lvgalvao/Udacity-Data-Engineering-Projects/blob/main/Exercises/Exercise%204%20Creating%20Fact%20and%20Dimension%20Tables%20with%20Star%20Schema.ipynb)
 
+*  Exercise 5: [Exercise 5 OLTP to Star Schema using ELT (SQL);](
+https://github.com/lvgalvao/Udacity-Data-Engineering-Projects/blob/main/Exercises/Exercise%205%20OLTP%20to%20Star%20Schema%20using%20ELT%20(SQL).ipynb
+)
