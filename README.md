@@ -1,7 +1,5 @@
 # Udatcity - Data Engineering Nanodgree Program
 
-![](https://westsideelectronics.com/content/images/size/w2000/2021/04/udacity-data.png)
-
 Design data models, build data warehouses and data lakes, automate data pipelines, and work with massive datasets.
 
 * Create user-friendly relational and NoSQL data models;
