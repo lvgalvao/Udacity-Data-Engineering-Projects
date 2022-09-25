@@ -1,48 +1,44 @@
-# Udatcity - Data Engineering Nanodgree Program
+# Data Engineering Nanodegree
 
-Design data models, build data warehouses and data lakes, automate data pipelines, and work with massive datasets.
+Projects and resources developed in the [DEND Nanodegree](https://www.udacity.com/course/data-engineer-nanodegree--nd027) from Udacity.
 
-* Create user-friendly relational and NoSQL data models;
-* Create scalable and efficient data warehouses;
-* Work efficiently with massive datasets;
-* Build and interact with a cloud-based data lake;
-* Automate and monitor data pipelines;
-* Develop proficiency in Spark, Airflow, and AWS tools.
+## Project 1: [Relational Databases - Data Modeling with PostgreSQL]
+Developed a relational database using PostgreSQL to model user activity data for a music streaming app. Skills include:
+* Created a relational database using PostgreSQL
+* Developed a Star Schema database using optimized definitions of Fact and Dimension tables. Normalization of tables.
+* Built out an ETL pipeline to optimize queries in order to understand what songs users listen to.
 
-## Project 1: Data Modeling with Postgres
-In this project, we apply Data Modeling with Postgres and build an ETL pipeline using Python. A startup wants to analyze the data they've been collecting on songs and user activity on their new music streaming app. Currently, they are collecting data in json format and the analytics team is particularly interested in understanding what songs users are listening to.
+Proficiencies include: Python, PostgreSql, Star Schema, ETL pipelines, Normalization
 
-Link: [Creating Denormalized Tables using PostgreSQL and SQL;](
-https://github.com/lvgalvao/Udacity-Data-Engineering-Projects/blob/main/Exercises/Exercise%204%20Creating%20Fact%20and%20Dimension%20Tables%20with%20Star%20Schema.ipynb)
 
-## Project 2: Data Modeling with Cassandra
-In this project, we apply Data Modeling with Cassandra and build an ETL pipeline using Python. We will build a Data Model around our queries that we want to get answers for. 
-For our use case we want below answers: 
+## Project 2: [NoSQL Databases - Data Modeling with Apache Cassandra]
+Designed a NoSQL database using Apache Cassandra based on the original schema outlined in project one. Skills include:
+* Created a nosql database using Apache Cassandra (both locally and with docker containers)
+* Developed denormalized tables optimized for a specific set queries and business needs
 
- - Get details of a song that was herad on the music app history during a particular session. 
- - Get songs played by a user during particular session on music app. 
-  - Get all users from the music app history who listened to a particular song.
+Proficiencies used: Python, Apache Cassandra, Denormalization
 
-Link:
 
-## Project 3: Data Warehouse
-In this project, we apply the Data Warehouse architectures we learnt and build a Data Warehouse on AWS cloud. We build an ETL pipeline to extract and transform data stored in json format in s3 buckets and move the data to Warehouse hosted on Amazon Redshift. 
+## Project 3: [Data Warehouse - Amazon Redshift]
+Created a database warehouse utilizing Amazon Redshift. Skills include:
+* Creating a Redshift Cluster, IAM Roles, Security groups.
+* Develop an ETL Pipeline that copies data from S3 buckets into staging tables to be processed into a star schema
+* Developed a star schema with optimization to specific queries required by the data analytics team.
 
-*  Link : [OLTP to Star Schema using ELT (SQL);](
-https://github.com/lvgalvao/Udacity-Data-Engineering-Projects/blob/main/Exercises/Exercise%205%20OLTP%20to%20Star%20Schema%20using%20ELT%20(SQL).ipynb
-)
+Proficiencies used: Python, Amazon Redshift, aws cli, Amazon SDK, SQL, PostgreSQL
 
-## Project 4: Data Lake
-In this project, we will build a Data Lake on AWS cloud using Spark and AWS EMR cluster. The data lake will serve as a Single Source of Truth for the Analytics Platform. We will write spark jobs to perform ELT operations that picks data from landing zone on S3 and transform and stores data on the S3 processed zone.
+## Project 4: [Data Lake - Spark]
+Scaled up the current ETL pipeline by moving the data warehouse to a data lake. Skills include:
+* Create an EMR Hadoop Cluster
+* Further develop the ETL Pipeline copying datasets from S3 buckets, data processing using Spark and writing to S3 buckets using efficient partitioning and parquet formatting.
+* Fast-tracking the data lake buildout using (serverless) AWS Lambda and cataloging tables with AWS Glue Crawler.
 
-Link:
+Technologies used: Spark, S3, EMR, Athena, Amazon Glue, Parquet.
 
-## Project 5: Data Pipelines with Airflow
-In this project, we will orchestrate our Data Pipeline workflow using an open-source Apache project called Apache Airflow. We will schedule our ETL jobs in Airflow, create project related custom plugins and operators and automate the pipeline execution. 
+## Project 5: [Data Pipelines - Airflow]
+Automate the ETL pipeline and creation of data warehouse using Apache Airflow. Skills include:
+* Using Airflow to automate ETL pipelines using Airflow, Python, Amazon Redshift.
+* Writing custom operators to perform tasks such as staging data, filling the data warehouse, and validation through data quality checks.
+* Transforming data from various sources into a star schema optimized for the analytics team's use cases.
 
-Link:
-
-## Project 6: Api Data to Postgres
-In this project, we build an etl pipeline to fetch data from yelp API and insert it into the Postgres Database. This project is a very basic example of fetching real time data from an open source API.
-
-Link: 
+Technologies used: Apache Airflow, S3, Amazon Redshift, Python.
