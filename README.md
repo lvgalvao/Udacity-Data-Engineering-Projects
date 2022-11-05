@@ -2,6 +2,9 @@
 
 Projects and resources developed in the [DEND Nanodegree](https://www.udacity.com/course/data-engineer-nanodegree--nd027) from Udacity.
 
+![image](https://user-images.githubusercontent.com/20580715/200135654-f7875177-c3d3-43df-a342-5294bfaca7e4.png)
+
+
 ## Project 1: [Relational Databases - Data Modeling with PostgreSQL]
 Developed a relational database using PostgreSQL to model user activity data for a music streaming app. Skills include:
 * Created a relational database using PostgreSQL
