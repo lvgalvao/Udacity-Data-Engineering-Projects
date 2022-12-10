@@ -1,50 +1,24 @@
-# L1 Exercise 1 - Creating a table with postgres
+# What is a Data Pipeline?
 
-# L1 Exercise 2 - Creating a table with cassandra using docker
+A *data pipeline* describes, in code, a series of sequential data processing steps. Depending on the data requirements for each step, some steps may occur in parallel. Data pipelines also typically occur on a *schedule. Extract, transform and load (ETL)*, or *extract, load, and transform (ELT),* are common patterns found in data pipelines, but not strictly required. Some data pipelines perform only a subset of ETL or ELT.
 
-To use 'cassandra-driver' needs python >3.8
-To run exercise 2 needs to run cassandra on Docker following this commandas:
+Examples of data pipelines:
 
-> docker run -d --name cassandra-node -p 9042:9042 cassandra
+Personalized emails that are triggered after a data pipeline executed.
+Companies commonly use data pipelines to orchestrate the analysis that determines pricing. For example, a rideshare app where you were offered real-time pricing.
+a Bikeshare company, that wants to figure out where their busiest locations are. They might use this data to determine where to build additional locations, or simply to add more bikes. A data pipeline to accomplish this task would likely first load application event data from a source such as S3 or kafka. Second, we might take that data and then load it into an analytic warehouse such as RedShift. Then third, perform data transformations that identify high-traffic bike docks.
 
-# L2 demo 1 - Creating normalized tables
 
-*Normalization and Denormalization*
+# These concepts are including in this unit:
 
-Normalization will feel like a natural process, you will reduce the number of copies of the data and increase the likelihood that your data is correct in all locations.
+<li> Data Validation
+<li> Direct Acyclic Graphs (DAG)
+<li> DAGs in Apache Airflow
+<li> Building DAGs and running them in Airflow
+<li> Data lineage in Airflow
+<li> Data pipeline schedules
+<li> Data partitioning
+<li> Extending Airflow with Plugins
+<li> Task boundaries
+<li> and when to refactor a DAG
 
-<li> Normalization organizes the columns and tables in a database to ensure that their dependencies are properly enforced by database integrity constraints.
-
-<li> We don’t want or need extra copies of our data, this is data redundancy. We want to be able to update data in one place and have that be the source of truth, that is data integrity. 
-
-*L2 demo 1 - Creating normalized tables* is an exercise to normalize table through all the necessary steps.
-
-*Objectives of Normal Form:*
-
-<li>To free the database from unwanted insertions, updates, & deletion dependencies
-<li>To reduce the need for refactoring the database as new types of data are introduced
-<li>To make the relational model more informative to users
-<li>To make the database neutral to the query statistics
-
-See this [Wikipedia](https://en.wikipedia.org/wiki/Database_normalization) page to learn more.
-
-*How to reach First Normal Form (1NF):*
-
- <li>Atomic values: each cell contains unique and single values
- <li>Be able to add data without altering tables
- <li>Separate different relations into different tables
- <li>Keep relationships between tables together with foreign keys
-
-*Second Normal Form (2NF):*
-
-<li>Have reached 1NF
-<li>All columns in the table must rely on the Primary Key
-
-*Third Normal Form (3NF):*
-
- <li>Must be in 2nd Normal Form
- <li> No transitive dependencies
-
-*When to use 3NF:*
-
-When you want to update data, we want to be able to do in just 1 place.
