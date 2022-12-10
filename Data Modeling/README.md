@@ -48,3 +48,7 @@ See this [Wikipedia](https://en.wikipedia.org/wiki/Database_normalization) page 
 *When to use 3NF:*
 
 When you want to update data, we want to be able to do in just 1 place.
+
+# L2 demo 2 - Creating normalized tables
+
+JOINS on the database allow for outstanding flexibility but are extremely slow. If you are dealing with heavy reads on your database, you may want to think about denormalizing your tables. You get your data into normalized form, and then you proceed with denormalization. So, denormalization comes after normalization.
