@@ -60,3 +60,7 @@ Let's take a moment to make sure you understand what was in the demo regarding d
 Normalization is about trying to increase data integrity by reducing the number of copies of the data. Data that needs to be added or updated will be done in as few places as possible.<br>
 
 Denormalization is trying to increase performance by reducing the number of joins between tables (as joins can be slow). Data integrity will take a bit of a potential hit, as there will be more copies of the data (to reduce JOINS).
+
+# L2 demo 3 - Creating fact and dimension tables
+
+ What you can see here is from this elegant schema we were able to get "facts/metrics" from our fact table (how much each store sold), and also information about our customers that will allow us to do more indepth analytics to get answers to business questions by utilizing our fact and dimension tables. 
